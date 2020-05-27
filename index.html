@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/cavet.css">
+  <link rel="stylesheet" href="css/kaushan.css">
+  <link rel="stylesheet" href="css/comic.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Pizzalicious</title>
+</head>
+
+<body>
+  <div class="jumbotron" id="welcome">
+
+    <h1>PIZZALICIOUS</h1>
+    <br>
+    <p1>"grab yours today"</p1>
+    <br><br><br>
+    <h3 class="text-white text-center"> VISIT</h3>
+    <p2 class="text-center"><u>https://pizzalicious.ke.com</u></p2>
+  </div>
+
+  <div id="menus"></div>
+  <br>
+
+  <div class="row1">
+    <div class="menu-overlay">
+      <h1 class="text-center text-inherit " id="menu">Menu:</h1>
+      <br>
+      <div class="pizza-menu row text-center">
+
+        <figure class="col-sm-4">
+          <br><br><br><br>
+          <img src="img/small.jpg" alt="small-pizza" class="animate__animated animate__backInRight" width="250px"
+            height="auto">
+          <figcaption class="text-inherit">Small<br>Ksh. 500</figcaption>
+        </figure>
+
+        <figure class="col-sm-4">
+          <img src="img/medium.jpg" alt="medium-pizza" class="animate__animated animate__backInUp" width='280px'
+            height="auto">
+          <figcaption class="text-inherit">Medium<br>Ksh. 750</figcaption>
+        </figure>
+
+        <figure class="col-sm-4">
+          <br>
+          <img src="img/large.jpg" alt="large-pizza" class="animate__animated animate__backInLeft" width="340px"
+            height="auto">
+          <figcaption class="text-inherit">Large<br>Ksh. 1000</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid order" id="make-order">
+    <div class="order-overlay">
+      <div class="controls-top text-center animate__animated animate__heartBeat" id="Order-now">
+        <h1>Orders below:</h1>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-5">
+          <form action="">
+            <label for="select">Select Flavour</label>
+            <select class="browser-default custom-select custom-select-md mb-3 name">
+             
+              <option value='Prosciutto Pizza'>Prosciutto Pizza</option>
+              <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
+              <option value="Butternut Pizza">Butternut Pizza</option>
+              <option value="Sweet Ricotta Pizza">Sweet Ricotta Pizza</option>
+              <option value="Taco Quesadila Pizza">Taco Quesadila Pizza</option>
+              <option value="Macaroni Pizza">Macaroni Pizza</option>
+            </select>
+            <label for="select">Select Size</label>
+            <select class="browser-default custom-select custom-select-md mb-3" id="size">
+              <option selected value="0">select size here</option>
+              <option value="large">Large -- sh. 1000</option>
+              <option value="medium">Medium -- sh. 750</option>
+              <option value="small">Small -- sh. 500</option>
+            </select>
+            <label for="crust">Select Crust</label>
+            <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+              <option selected value="0">select crust here</option>
+              <option value="Gluten-free">Gluten-free-- sh. 130</option>
+              <option value="Stuffed">Stuffed -- sh. 145</option>
+              <option value="Crispy">Crispy-- sh. 160</option>
+            </select>
+            <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+              <label class="custom-control-label" for="Sausage">Sausage</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" class="custom-control-input" id="Tomatoes" value="Tomatoes" name="toppings">
+              <label class="custom-control-label" for="Tomatoes">Tomatoes</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+              <label class="custom-control-label" for="Bacon">Bacon</label>
+            </div>
+            <br><br>
+            <button type="submit" class="btn bg-primary proceed">Proceed</button>
+
+          </form>
+        </div>
+        <div class="col-sm-7">
+          <div id="order">
+            <br>
+            <p>Remember to choose you taste wisely as you are placing your order</p>
+            <p>Incase of any inconveniencies, reach out to us through the telephone contacts .</p>
+          </div>
+          <div class="choise">
+            <h2>YOU ORDERED</h2>
+            <div id="your-orders">
+              <table class="table table-sm  pizzatable">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Crust</th>
+                    <th scope="col">Topping</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="ordersmade">
+                  <tr>
+                    <td id="pizzaname"></td>
+                    <td id="pizzasize"></td>
+                    <td id="pizzacrust"></td>
+                    <td id="pizzatopping"></td>
+                    <td id="totals"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p id="pizzatotal"></p>
+              <p id="totalbill"></p>
+              <p id="addedprice">Delivery cost is sh. 150</p>
+              <p id="finallmessage"></p>
+            </div>
+            <button class="btn bg-info addPizza">Add Pizza</button>
+            <button class="btn bg-info" id="checkout">Checkout</button>
+            <button class="btn bg-info  deliver">Home Delivery</button>
+          </div>
+          <div class="delivery">
+            <form action="">
+              <div class="form-group">
+                <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                <button class="btn bg-info" id="final-order">Place Order</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="contacts">
+    <h4>CONTACTS</h4>
+    <div class="row">
+      <div class="column">
+        <h6><u>Telephone Contacts</u></h6>
+        <p>Main Office: +254 489 624 725</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer Service: +254 725 624 489</p>
+      </div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="column">
+      <div class="column">
+        <h6><u>E-mail Adress</u></h6>
+        <p>pizzalicious@yourdoor.com</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
