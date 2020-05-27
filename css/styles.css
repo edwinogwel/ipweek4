@@ -1,0 +1,94 @@
+
+  .jumbotron{
+    background-image: url('../images/background/background3.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+  padding-bottom: -20;
+  
+  }
+  h1{font-family:'kaushan_scriptregular';
+    color: indianred;
+  }
+  p1{
+    color: lawngreen;
+  }
+  p2{
+    color:blue;
+  }
+  
+  
+  .row1{
+  color: inherit;
+   
+    font-family: 'comic_neueitalic';
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+  
+  
+  .row1 h1{color: rgb(11, 104, 226);}
+  
+  
+  .order{  font-family: 'comic_neuelight_italic';
+    background-attachment: fixed;
+    background-image: url("../images/background/background4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 4%;
+  }
+  .order h1{color: white;}
+  
+  .order-overlay {
+      height: inherit;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+  
+  }
+  td,th{
+    font-size: 15px;
+    color: rgb(31, 31, 31);
+  }
+  .choise h2{
+    color:rgb(247, 38, 49);
+    text-align: left;
+    font-size: 16px;
+  }
+  .controls-top h1{color: orange;}
+  #your-orders{
+    color: white;
+    font-size: 12px;
+  }
+  #order p{font-family: 'comic_neuelight_italic',serif;
+  font-size: 16px;
+  color: greenyellow;
+  }
+  
+  .choise{
+    display: none;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: 'caveatbold',serif;
+  }
+  .deliver{
+    display: none;
+  }
+  .delivery{
+    display: none;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+.contacts {
+padding-left: 100px;
+text-align: center;
+font-size: 13px;
+}
+.row {
+  padding-left: 300px;
+}
