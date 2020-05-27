@@ -28,10 +28,7 @@
     padding-left: 200px;
   }
   
-  
   .row1 h1{color: rgb(11, 104, 226);}
-  
-  
   .order{  font-family: 'comic_neuelight_italic';
     background-attachment: fixed;
     background-image: url("../images/background/background4.jpg");
@@ -55,7 +52,7 @@
     color: rgb(31, 31, 31);
   }
   .choise h2{
-    color:rgb(247, 38, 49);
+    color:rgb(235, 235, 235);
     text-align: left;
     font-size: 16px;
   }
