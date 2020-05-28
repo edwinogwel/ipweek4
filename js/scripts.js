@@ -169,7 +169,7 @@ $(document).ready(function () {
 
       if ($("input#name").val() && $("input#phone").val() && $("input#location").val() != "") {
 
-        $("#finallmessage").append(person + ", we have recieved your order and it is being processed.We will deliver at " + location + ". The total cost is sh. " + deliceryamount);
+        $("#finallmessage").append(person + ", we have recieved your order and it is being processed.We will deliver at " + location + ". The total cost is sh. " + deliveryamount);
         $("#totalbill").hide();
         $("#finallmessage").slideDown(1200);
       }
