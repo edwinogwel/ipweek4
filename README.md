@@ -15,7 +15,7 @@ To run this project use the following commands:
 * EMAIL: pizzalicious@yourdoorstep.com
 
 ## Link to live site on GitHub Pages
-*
+**https://edwinogwel.github.io/ipweek4/**
 
 ### License
 **MIT**
