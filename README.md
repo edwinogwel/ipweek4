@@ -14,9 +14,6 @@ To run this project use the following commands:
 * PHONE: + 254 (123) -456
 * EMAIL: pizzalicious@yourdoorstep.com
 
-## Link to live site on GitHub Pages
-**https://edwinogwel.github.io/ipweek4/**
-
 ### License
 **MIT**
 Copyright (c) 2020 **Pizzalicious**  
